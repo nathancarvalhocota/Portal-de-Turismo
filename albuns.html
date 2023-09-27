@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Nathan Carvalho">
+    <meta name="author" content="Nathan Carvalho">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Portal Turismo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary-subtle">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="index.html">
+                    <img src="imagens/logo.png" alt="" width="40" height="40"
+                        class="d-inline-block align-text-center">Portal
+                    Turismo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon width=30"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-flex-end" id="navbarNav">
+                    <ul class="navbar-nav position-absolute end-0 me-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br><br><br>
+    </header>
+
+    <main class="ms-5">
+        <br>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fotos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div id="carouselExampleIndicators" class="carousel slide" style="width: 100%;"
+                                data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+
+                                <div class="carousel-inner" id="carousel">
+                                    <div class="carousel-item active">
+                                        <img src="/imagens/cristo3.jpg" class="d-block w-15" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/imagens/cristo2.webp" class="d-block w-15" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/imagens/cristo1.jpg" class="d-block w-15" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h1 class="border-bottom border-black text-start mb-3 fw">Detalhe</h1>
+        <div class="card mb-3" style="width: 90%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="/imagens/cristo1.jpg" class="img-fluid rounded-start" alt="Cristo Redentor"
+                        style="width: 100%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cristo Redentor</h5>
+                        <p class="card-text">Cristo Redentor é uma estátua que retrata Jesus Cristo, localizada no topo
+                            do morro do Corcovado, a 709 metros acima do nível do mar, com vista para parte considerável
+                            da cidade brasileira do Rio de Janeiro. Feito de concreto armado e pedra-sabão,tem trinta
+                            metros de altura (uma das maiores estátuas do mundo), sem contar os oito metros do pedestal.
+                            Seus braços se esticam por 28 metros de largura e a estrutura pesa 1145 toneladas. <Br> O
+                            monumento é parte de um santuário católico e a Arquidiocese do Rio de Janeiro administra a
+                            estátua e o platô do mirante, além de também ser responsável pela manutenção e pelas
+                            celebrações na área.</p>
+                        <h6 class="fw-bold">Localização</h6>
+                        <p>Rio de Janeiro - RJ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <h1 class="border-bottom border-black text-start mb-3">Destinos</h1>
+        <div class="container-fluid ms-0" id="cards">
+
+            <div class="row g-3">
+
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                        <img src="/imagens/cristo.png" class="card-img-top" alt="Cristo Redentor">
+                        <div class="card-body">
+                            <h5 class="card-title">Cristo Redentor</h5>
+                            <p class="card-text">Principal ponto turístico do Brasil, uma estátua que retrata Jesus
+                                Cristo, localizada no topo do morro do Corcovado a 709 metros acima do nível do mar, com
+                                vista para parte considerável da cidade brasileira do Rio de Janeiro</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Rio de Janeiro - RJ</small>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/cachoeira.jpg" class="card-img-top" alt="Foz do iguaçu">
+                        <div class="card-body">
+                            <h5 class="card-title">Cataratas do Iguaçu</h5>
+                            <p class="card-text"> Um lindo conjunto de cerca de 275 quedas de água no rio Iguaçu.
+                                Localizada entre o Parque Nacional do Iguaçu, Paraná, no Brasil, e o Parque Nacional
+                                Iguazú em Misiones, na Argentina, na fronteira entre os dois países</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Foz do Iguaçu - PR</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/baiasancho.png" class="card-img-top" alt="Baía do Sancho">
+                        <div class="card-body">
+                            <h5 class="card-title">Baía do Sancho</h5>
+                            <p class="card-text">>Baía de águas claras localizada a oeste do Morro Dois Irmãos e a leste
+                                da Baía dos
+                                Golfinhos, no arquipélago de Fernando de Noronha. É uma paisagem de impressionar,
+                                considerada por muitos uma
+                                das, se não a praia mais linda do mundo</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Fernando de Noronha - PE</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/furnas.jpg" class="card-img-top" alt="Furnas">
+                        <div class="card-body">
+                            <h5 class="card-title">Lago de Furnas</h5>
+                            <p class="card-text">Muito conhecido como “mar de minas” e a grandiosidade de suas águas,
+                                com 1440 km² de área,
+                                faz mesmo dele um lugar espetacular. Cercado por uma linda paisagem formada por
+                                cachoeiras e cânions que dão
+                                ainda mais beleza ao lugar.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Capitólio - MG</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/jardimbotanico.jpg" class="card-img-top" alt="Jardim Botânico">
+                        <div class="card-body">
+                            <h5 class="card-title">Jardim Botânico</h5>
+                            <p class="card-text">O Jardim Botânico de Curitiba é um dos maiores cartões postais da
+                                cidade. Possui 245 mil m² com diversas paisagens floridas, cantos para piqueniques e uma
+                                linda paisagem para fotos</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Curitiba - PR</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/lencois.png" class="card-img-top" alt="Lençóis Maranhenses">
+                        <div class="card-body">
+                            <h5 class="card-title">Lençóis Maranhenses</h5>
+                            <p class="card-text">asta paisagem desértica de grandes dunas de areia branca e pelas lagoas
+                                sazonais de água da chuva. O ecossistema diversificado do parque inclui pântanos de
+                                mangais.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Barreirinhas - MA</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/portodegalinhas.jpg" class="card-img-top" alt="Porto de Galinhas">
+                        <div class="card-body">
+                            <h5 class="card-title">Porto de Galinhas</h5>
+                            <p class="card-text ">Um distrito localizado a cerca de 60 km de Recife. Um dos melhores
+                                destinos de praia do Brasil. Marcado pelas águas verdes e pelas entre piscinas naturais,
+                                com uma beleza única.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Ipojuca - PE</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/imagens/pampulha.jpg" class="card-img-top" alt="Pampulha">
+                        <div class="card-body">
+                            <h5 class="card-title">Lagoa da Pampulha</h5>
+                            <p class="card-text">Amplo lago artificial. Às margens, há o Museu de Arte da Pampulha, que
+                                abriga obras de arte brasileira, a Capela Curial da Igreja de São Francisco de Assis e a
+                                Casa do Baile</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted fw-bold">Belo Horizonte - MG</small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <br>
+    <footer class="footer ms-5">
+        <h1 class="border-bottom border-black text-start mb-3">Créditos</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 me-5">
+                    <h4>Sobre</h4>
+                    <p style="font-size: 17px;">Este é o projeto do primeiro trabalho avaliativo da disciplina
+                        Desenvolvimento de
+                        Interfaces WEB. Realizado utilizando HTML, CSS e Bootstrap. O intuito é desenvolver as
+                        habilidades de
+                        organização de página e responsividade criando um projeto com tema de nossa escolha, seguindo o
+                        wireframe
+                        fornecido pelo professor.</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <h4>Autoria</h4>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/imagens/foto.webp" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 17px;"><strong>Aluno: </strong>Nathan
+                                        Carvalho</p>
+                                    <p class="card-text" style="font-size: 17px;"><strong>Curso: </strong> Análise e
+                                        desenvolvimento de
+                                        Sistemas</p>
+                                    <div>
+
+
+                                        <p class="card-text" style="font-size: 17px;"><strong>Redes Sociais:</strong>
+                                        </p>
+                                    </div>
+
+                                    <a href="//www.instagram.com/031__nathan/">
+                                        <img href="" src="imagens/insta.png" alt="" width="50" height="30"></a>
+                                    <a href="//www.linkedin.com/in/nathan-carvalho-337867228/">
+                                        <img src="imagens/linkedn.webp" alt="" width="50" height="50"></a>
+                                    <a href="//github.com/nathancarvalhocota">
+                                        <img src="imagens/git.png" alt="" width="40" height="40"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
